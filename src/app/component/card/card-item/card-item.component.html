@@ -1,0 +1,41 @@
+<div class="card">
+
+    <div class="imagem">
+         <img src='../assets/img/agente-das-sombras-download-torrent-2022-dublado-dual-audio-bluray-1080p-720p-4k-hd.jpg' class="card-img-top" alt="..."> 
+
+        <div class="card-info">
+            <div class="clitica">
+                {{ tipo.criticaExpecializada }}
+            </div>
+            <div class="qualidade">
+                {{ tipo.qualidade }}
+            </div>
+            <div class="tipo">
+                {{ tipo.tipo }}
+            </div>
+            <div class="idioma">
+                {{ tipo.idiomaAudio }}
+            </div>
+        </div>
+
+        <div class="card-cover">
+            <h1>{{ tipo.tituloOriginal }}</h1>
+            <p>{{ tipo.genero }}</p>
+            <p>{{ tipo.lancamento }}</p>
+            <p>{{ tipo.qualidade }}</p>
+        </div>
+    
+
+    </div>
+
+    <div class="card-body">
+        <h5 class="card-title">{{ tipo.tituloOriginal }}</h5>
+        <p class="card-text">{{ tipo.resenha }}</p>
+
+        <a [routerLink]="['card-torrent']" class="btn btn-primary">Informação</a>
+
+    </div>
+
+</div>
+
+<router-outlet></router-outlet>
